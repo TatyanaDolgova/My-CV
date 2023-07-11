@@ -59,11 +59,11 @@
             </li>
             <li class="contacts-item">
               <h4 class="title-h4">Email</h4>
-              <a class="contacts-elem" href="mailto:example@example.com" class="contacts-discord">myemail@mail.ru</a>
+              <a class="contacts-elem contacts-discord" href="mailto:example@example.com">myemail@mail.ru</a>
             </li>
             <li class="contacts-item">
               <h4 class="title-h4">Phone</h4>
-              <a class="contacts-elem" href="tel:+1234567890" class="contacts-discord">+7 123 45 67 890</a>
+              <a class="contacts-elem contacts-discord" href="tel:+1234567890">+7 123 45 67 890</a>
             </li>
           </ul>
         </div>
@@ -87,22 +87,9 @@
           <div class="line"></div>
           <pre>
             <code class="code-example">
-              module.exports = function reverse (n) {
-                let result = '';
-                let str = n.toString();
-                let arr = str.split('');
-  
-                for (let i = 0; i < str.length; i++) {
-                  result = arr[i] + result;
-              
-                  if(result[result.length - 1] === '-') {
-                    result = result.slice(result.length);
-                  }
-                }
-              
-                return Number(result);
-              };
-              
+              function removeLeadingAndTrailingWhitespaces(value) {
+                return value.trim();
+              }
             </code>
           </pre>
         </div>
