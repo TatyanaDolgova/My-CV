@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>RSSchool CV</title>
 </head>
+
 <body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#code">Code example</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#project">My project</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="wrapper header-wrapper">
+      <img class="header-img" src="img/my-photo.jpeg" alt="my-photo">
+      <div class="header-content">
+        <h1 class="header-title">Tatiana Kylikova</h1>
+        <h3 class="header-subtitle">Web-developer</h3>
+        <h2 id="about" class="header-title-h2">ABOUT ME</h2>
+        <div class="line"></div>
+        <div class="header-text">
+          I am a student studying frontend development at RSSchool. Inspired by technology and creating interactive web
+          applications. My goal is to become a skilled frontend developer and create appealing interfaces.
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper main-wrapper">
+      <div class="main-info">
+        <div id="contacts" class="contacts">
+          <h2 class="title">Contacts</h2>
+          <div class="line"></div>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <h4 class="title-h4">Discord</h4>
+              <div class="contacts-elem">Tatyana (@TatyanaDolgova)</div>
+            </li>
+            <li class="contacts-item">
+              <h4 class="title-h4">Email</h4>
+              <a class="contacts-elem contacts-discord" href="mailto:example@example.com">myemail@mail.ru</a>
+            </li>
+            <li class="contacts-item">
+              <h4 class="title-h4">Phone</h4>
+              <a class="contacts-elem contacts-discord" href="tel:+1234567890">+7 123 45 67 890</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="more-info">
+        <div id="skills" class="skills">
+          <h2 class="title">Skills</h2>
+          <div class="line"></div>
+          <ul class="slills-list">
+            <li class="skills-item">HTML/HTML5, CSS3/SCSS, BEM</li>
+            <li class="skills-item">Figma, Git, Webpack</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">TypeScript (basic)</li>
+            <li class="skills-item">Node JS (basic)</li>
+            <li class="skills-item">English - A2</li>
+          </ul>
+        </div>
+        <div id="code" class="code">
+          <h2 class="title">Code example</h2>
+          <div class="line"></div>
+          <pre>
+            <code class="code-example">
+              function removeLeadingAndTrailingWhitespaces(value) {
+                return value.trim();
+              }
+            </code>
+          </pre>
+        </div>
+        <div id="project" class="my-project">
+          <h2 class="title">My project</h2>
+          <div class="line"></div>
+          <ul class="project-list">
+            <li class="project-item">
+              <a href="https://tatyanadolgova.github.io/virtual-keyboard/" class="project-link" target="_blank">
+                <img src="img/keyboard.png" alt="keyboard-project" class="project-img">
+                <span class="img-overlay">Virtual keyboard</span>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="https://tatyanadolgova.github.io/online-store/" class="project-link" target="_blank">
+                <img src="img/online-store.png" alt="online-store" class="project-img">
+                <span class="img-overlay">Online Store</span>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="https://tatyanadolgova.github.io/window-store/" class="project-link" target="_blank">
+                <img src="img/window-store.png" alt="window-store" class="project-img">
+                <span class="img-overlay">Window Store</span>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="https://tatyanadolgova.github.io/cssBayan/cssBayan/" class="project-link" target="_blank">
+                <img src="img/Bayan.png" alt="cssBayan" class="project-img">
+                <span class="img-overlay">cssBayan</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer-wrapper">
+      <a href="https://github.com/TatyanaDolgova?tab=repositories" target="_blank">
+        <img class="github-icon" src="img/footer-icon-github.svg" alt="github"></a>
+      <a href="https://rs.school/js/">
+        <img class="rsschool-icon" src="img/rs_school_js.svg" alt="rs-school">
+      </a>
+      <div class="year">2023</div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
